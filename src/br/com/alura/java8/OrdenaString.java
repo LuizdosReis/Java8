@@ -5,15 +5,15 @@ import java.util.List;
 
 public class OrdenaString {
 	public static void main(String[] args) {
-		List<String> list = Arrays.asList("Caelum", "Casa do Codigo", "Alura");
+		List<String> list = Arrays.asList("Caelum", "basa do Codigo", "Alura");
 
 		new ComparadorDeStringsPeloTamanho();
 
-		list.sort((s1, s2) -> s1.length() - s2.length());
+		list.sort(String.CASE_INSENSITIVE_ORDER);
 
 		System.out.println(list);
 
-		list.forEach(s -> System.out.println(s));
+		list.forEach(System.out::println);
 
 	}
 
