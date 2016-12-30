@@ -10,7 +10,7 @@ public class Stream {
 		List<Curso> cursos = new ArrayList<Curso>();
 		cursos.add(new Curso("Pyton", 45));
 		cursos.add(new Curso("JavaScript", 150));
-		cursos.add(new Curso("htm e css", 113));
+		cursos.add(new Curso("html e css", 113));
 		cursos.add(new Curso("C", 55));
 
 		int alunos = cursos.stream().mapToInt(Curso::getQtAlunos).sum();
